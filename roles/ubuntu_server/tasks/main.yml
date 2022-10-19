@@ -51,7 +51,7 @@
     group: root
 
 - name: Compilation, Installation, and Creating Users
-  shell:
+  shell: |
     cd ~/nagios/nagioscore-*
     sudo ./configure --with-httpd-conf=/etc/apache2/sites-enabled
     sudo make all
@@ -75,7 +75,7 @@
     group: root
 
 - name: Compiling and Installing
-  shell:
+  shell: |
     cd ~/nagios/nagios-plugins*
     ./tools/setup
     ./configure
